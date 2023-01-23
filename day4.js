@@ -13,3 +13,20 @@ request.onload = function () {
     }
 
 }
+
+// How to compare two JSON have the same properties without order
+
+let obj1={ name='Person1', age=5};
+let obj2={ age=5 , name='Person1'};
+var assume=true;
+
+for(var i in Object.keys(assume)){
+    if(a[i]!=b[i]){
+        assume = false;
+    }
+}
+if(assume){
+    console.log("properties are same");
+}else{
+     console.log("properties are not same");
+}
